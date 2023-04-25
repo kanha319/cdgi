@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+  <link rel="shortcut icon" href="./Amazon-Symbol.png">
+  <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="font-awesome - Libraries - cdnjs - The #1 free and open source CDN built to make life easier for developers
+  cdnjs.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet"> -->
+ <style>
+
+  body{
+    /* background: url("./bg.avif") no-repeat center; */
+	/* background-size: cover; */
+	/* filter: blur(0px); */
+	z-index: -1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+*{
+    transition: all 0.1s ease-in-out;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+
+/* back to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  /* font-size: 18px; */
+  border: none;
+  outline: none;
+  background-color:#000000;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 15px  ;
+  border-radius: 4px;
+  width: 5%;
+  
+}
+
+#myBtn:hover {
+  background-color: #343434;
+  color: black;
+}
+
+
+:root {
+    --major-bg-color: #131921;
+    --minor-bg-color: #ebeded;
+    --amazon-major-color: #febd68;
+}
+
+/* BODY */
+body {
+    background-color: var(--minor-bg-color)
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--major-bg-color);
+    display: flex;
+    justify-content: center;
+}
+.header .header-nav {
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+.header .header-nav .header-container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header-nav .header-container .amazon-logo {
+    width: 100px;
+}
+.header .header-nav .header-container .header-search {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.header .header-nav .header-container .header-search .search-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    padding: 0 10px;
+}
+.header .header-nav .header-container .header-search .search-button {
+    width: 40px;
+    height: 42px;
+    /* border-radius: 5px; */
+    background-color: var(--amazon-major-color);
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #232323;
+}
+.header .header-nav .header-container .header-cart {
+    color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header-nav .header-container .header-cart svg {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navigation bar */
+/* .container{
+    clear: both;
+    overflow: auto;
+    background-color:rgb(4, 155, 39);
+    overflow: hidden;
+    /* position: fixed; 
+    top: 0%;
+    width: 100%;
+
+}
+.logo{
+    float:left;
+    width: 20px;
+} 
+
+.logo{
+     width: 110px;
+     margin: 20px;
+     height: auto;
+     float:left;
+   }
+.logo1{
+    width: 110px;
+    margin: 10px 60px 0px  0px;
+} */
+nav{
+    float: right;
+ 
+}
+ul li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px;
+}    
+li a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+}
+ .dropbtn {
+  display: inline-block;
+   padding: 14px 16px;
+
+}
+
+ li a:hover{
+   /* text-decoration: underline; */
+   color: #ebeded;
+   text-decoration: underline;
+}
+.category:hover{
+ color:black;
+}
+/* dropdown  */
+li .dropdown{
+    display: inline;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+.dropdown-content a:hover{
+    background-color: #d4d4d4;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+/* second part */
+.bgimg_1{
+    /* position: relative; */
+    background-color: #ebebed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -50px;
+}
+.caption{
+    /* position:absolute; */
+    /* left: 0px;
+    top: 110%; */
+    width: 100%;
+    height: 409px;
+    padding-top: 120px;
+    text-align: center;
+    color: black;
+}
+ .h1{
+    color:black;
+    /* padding: 58px; */
+    font-size: 55px;
+    margin: 70px;
+    letter-spacing: 4px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.h2{
+    color:black;
+    /* padding: 58px; */
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+/* button*/
+#more{
+    display: none;
+}
+button{
+    background-color:rgb(0, 0, 0);
+  border: none;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 140px;
+  text-align: center;
+  margin:12px;
+}
+button:hover{
+   background-color:#d4d4d4 ;
+   color: black;
+}
+.details{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+/* styleshow */
+/* *{box-sizing: border-box} */
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align:middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(79, 75, 75, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.visit{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  }
+
+  .visit:hover{
+    color: black;
+  }
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+/* .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #525252;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+/* images */
+
+
+.img-container{
+  /* grid-template-columns: repeat(2, 1fr); */
+  margin: 20px 40px;
+  /* background-color: white; */
+
+}
+.images{
+  /* display: flex; */
+  float: left;
+   text-align: center;
+   padding: 20px 80px 20px 80px;
+   font-family:fantasy;
+   padding:30px;
+   /* height: 300px; */
+   /* border: 2px solid red; */
+
+}
+
+.grp4{
+  display: block;
+}
+.images .rate{
+  font-family:fantasy;
+  padding-top: 20px;
+}
+.images .rate p{
+  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding-top: 5px 0 20px 0;
+}
+ .shop:hover{
+  color: #6b6b6b;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    background-color: #636363;
+    height: 70px;
+    text-align: center;
+}
+svg{
+    margin-left: 20px;
+    width: 33px;
+    height: 20px;
+   
+}
+
+    </style>
+    </head>
+<body>
+
+  <!-- back to top button -->
+  
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  
+
+ <!-- NAVBAR-1 -->
+ <header class="header" style="background-color: #ebeded;">
+  <nav class="header-nav">
+      <div class="header-container">
+          <img class="amazon-logo" src="./images/amazon logo.png" alt="Amazon Logo">
+          <div class="header-search">
+              <input class="search-input" type="text">
+              <button class="search-button" >
+                <i class="fas fa-search"></i>
+              </button>
+          </div>
+          <div class="header-cart">
+              <div>
+                  <svg style="color:black;" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                  </svg>
+              </div>
+              <p style="color: #000000;">Cart</p>
+          </div>
+      </div>
+      <div>
+
+      </div>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<!-- navigation bar -->
+ <!-- NAVBAR-2-->
+ <header class="header">
+  <nav class="header-nav">
+      <div class="header-container">
+          <nav>
+              <ul>
+                  <li><a id="home" href="#">HOME</a></li>
+                  <li class="dropdown"><a class="dropbtn" href="">PRODUCTS</a>
+                    <div class="dropdown-content">
+                      <a class="category" href="./electronicsweb.html">Electronics</a>
+                      <a class="category" href="./grocery.html">Grocery</a>
+                      <a class="category" href="#">Garments</a>
+                      <a class="category" href="./mobiles.html">Mobiles</a>
+                      <a class="category" href="#">Appliances</a>
+                    </div></li>
+                    <li><a href="./services.html">SERVICES</a></li>
+                  <li><a href="webloginpage.html">LOG IN</a></li>
+              </ul>
+          </nav>
+          
+      </div>
+      <div>
+
+      </div>
+  </nav>
+</header>     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+<!-- slideshow -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./images/img4.jpg" style="width:100%">
+      <div class="text"><button id=""><a class="visit" href="./electronicsweb.html">Visit Now</a></button></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="../webproject.b/images/img5.jpg" style="width:100%">
+      <div class="text"><button id=""><a class="visit" href="">Visit Now</a></button></div>
+    </div>
+    
+    
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./images/img11.jpg" style="width:100%">
+      <div class="text"><button id="" ><a class="visit" href="./grocery.html">Visit Now</a></button></div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+  </div>
+    
+    
+    <!-- <div style="text-align:center;background-color: #a0ff74;">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div> -->
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<!-- global commerce platform  -->
+<div id="Amazon" class="bgimg_1">
+<div class="caption">
+    <span class="h2">World's largest</span><br>
+    <span class="h1">The global commerce <br> platform</span><br>
+    <span class="h2">Build your business with Amazon to sell online, offline, and everywhere in between.</span><br><br>
+    
+<p class="details">Amazon is a commerce platform that allows anyone to set up an online store and sell <span id="dots">...</span><span id="more">their products. Merchants can also sell their products in person with Amazon POS.
+  Amazon is now the leading commerce platform designed for businesses of all sizes. Whether you sell online, on social media, in store, or out of the trunk of your car, Amazon has you covered. The first Amazon store was our own, and it’s been our mission to make commerce better for everyone ever since.Whether you’re a budding jewelry designer and want to start selling your products, or a musician and want to sell your latest mixtape, or if you have an established business and want to grow, Amazon can help you. Hundreds of thousands of entrepreneurs from over 175 countries trust Amazon to help sell their products.</span></p>
+<button  onclick="myFunction()" id="myBt">Read more</button>
+
+</div>
+</div>
+<!-- javaScript start -->
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBt");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+
+
+<!-- images gallery -->
+<div class="img-container">
+  <div class="grp4">
+  <div class="images" style="height: 300px;"><img src="./images/imgp12.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images" style="height: 0px;"><img src="./images/imgp15.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images" style="height: 0px;" ><img src="./images/imgp14.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images" style="height: 0px;"><img src="./images/imgp13.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+</div>
+</div>
+<!-- ----------------------g2 -->
+
+<!-- <div class="grp4">
+  <div class="images"><img src="./images/imgp17.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div> -->
+
+
+<div class="images" style="height: 290px;"><img src="./images/imgp11.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images" style="height: 290px;"><img src="./images/imgp10.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images"><img src="./images/imgp9.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+<!-- </div> -->
+
+<!-- --------------g3---------------------------------------- -->
+<div class="grp4">
+<div class="images" style="height: 290px;"><img src="./images/imgp8.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images" style="height: 290px;"><img src="./images/imgp7.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images" style="height: 290px;"><img src="./images/imgp6.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images"><img src="./images/imgp5.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+</div>
+
+<!-- ---------------g4------------------------------ -->
+<div class="grp4">
+<div class="images"><img src="./images/imgp4.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images"><img src="./images/imgp3.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+
+
+<div class="images"><img src="./images/imgp1.jpg" alt="">
+  <div class="rate"><p>top cameras</p><h2>$200</h2><p class="shop">shop Now</p></div>
+</div>
+</div>
+
+  
+</div>
+
+
+
+
+
+
+<!-- about Us -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- contactUs -->
+<div class="containerContactUs">
+    <div class="contact-boxContactUs">
+        <div class="leftContactUs">
+            <div class="svgContactUs1">
+            <div class="svgContactUs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="svg-ContactUs" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                  <!-- <i class="fa-solid fa-phone"></i>
+                  <i class="fa-regular fa-phone"></i> -->
+                <h1 >Phone</h1>
+                <p>+01 00939029</p>
+                <p>+01 3939029</p>
+            </div>
+            <div class="svgContactUs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg-ContactUs" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                  <!-- <i class="fa-solid fa-envelope"></i> -->
+                <h1>Email</h1>
+                <p>Amazonindia@gmail.com</p>
+                <p>hawachau@gmail.com</p>
+            </div>
+            <div class="svgContactUs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg-ContactUs" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                  </svg>
+                  
+                <h1>Address</h1>
+                <p>UB City, No.24, Vittal Mallya Road, <br> Bangalore 560001, India.</p>
+            </div>
+            </div>
+            
+
+        </div>
+        <div class="rightContactUs">
+            <h2 class="ContactUs">Contact Us</h2>
+            <input type="text" class="fieldContactUs" placeholder="Your Name">
+            <input type="text" class="fieldContactUs" placeholder="Your Email">
+            <input type="text" class="fieldContactUs" placeholder="Phone">
+            <textarea placeholder="Message" class="fieldContactUs"></textarea>
+            <button class="btnContactUs">Send</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<footer><br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+            <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+          <p><div class="copyright-text"> Copyright &copy; 2023 All Rights Reserved by 
+                <a href="#">Amazon</a>.</div>
+    </p>
+</footer>
+
+
+
+<!-- javaScript start
+    <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script> -->
+
+</body>
+</html>
