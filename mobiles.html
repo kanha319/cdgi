@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobiles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+    *{
+        margin: 0%;
+        padding: 0;
+    }
+
+ body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url("bg.avif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+/* background-image: radial-gradient(rgb(208, 229, 176), rgba(49, 154, 17, 0.8), green); */
+background-color: #ebeded;
+margin: 0%;
+}
+
+.logo{
+     width: 110px;
+     margin: 20px;
+     height: auto;
+     float:left;
+   }
+    #elec{
+     text-align: center;
+    font-size:40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+   color: #000000;
+       padding-top: 20px;
+        /* left: 200px; */
+        /* padding-left: 500px; */
+            
+     }
+
+
+     /* footer */
+footer{
+    background-color: #636363;
+    height: 70px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+svg{
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+   
+}
+/* ------------------------------------------------------------------------ */
+/* body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: aliceblue;
+} */
+
+
+.m-photo{
+    background-color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    
+}
+.m-photo h2{
+    font-size: 40px;
+    border-bottom: 5px solid green ;
+    margin: 20px;
+    padding: 20px 20px 10px 20px;
+    float: left;
+    
+}
+
+
+.mini{
+    width: 80%;
+    height: auto;
+    background-size: cover;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0%;
+    padding-top: 10px;
+
+}
+a{
+    text-decoration: none;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.content{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgb(0, 0, 0, 0.25),
+     0 10px 10px rgb(0, 0, 0,0.22);
+     transition: .4s;
+     background: #f2f2f2;
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgb(0, 0, 0,0.16),
+    0 3px 6px rgb(0, 0, 0, 0.23);
+    transform: translate(0px , -8px);
+}
+
+img{
+    width: auto;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+p{
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0%;
+}
+
+li{
+    padding-top: 5px;
+}
+
+.fa{
+    font-size: 26px;
+    transition: .4s;
+    margin: 3px;
+}
+.checked{
+    color: goldenrod;
+    }
+
+.fa:hover{
+    transform: scale(1.3);
+    transition: .6s;
+}
+button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+button:hover{
+    background-color: black;
+}
+.buy-1{
+    background-color: blueviolet;
+}
+
+.buy-2{
+    background-color: rgb(43, 122, 226);
+}
+.buy-3{
+    background-color: rgb(226, 43, 43);
+}
+.buy-4{
+    background-color: rgb(43, 73, 226);
+}
+.buy-5{
+    background-color: rgb(2, 163, 185);
+}
+.buy-6{
+    background-color: rgb(4, 84, 13);
+}
+
+</style>
+</head>
+<body><header>
+    <div class="header">
+    <img class="logo" src="./images/amazon logo.png" alt="">
+    <h2 id="elec">Mobiles</h2><br><br><hr>
+    </div>
+    </header>
+
+
+
+    <div class="m-photo">
+    <h2>sale of the day</h2>
+    <img class="mini" src="./images/m10.jpg" alt="">
+    <img class="mini" src="./images/m11.jpg" alt="">
+    <img class="mini" src="./images/m12.jpg" alt="">
+    <h2>new launches</h2>
+    <img class="mini" src="./images/m4.jpg" alt="">
+    <img class="mini" src="./images/m5.jpg" alt="">
+    <img class="mini" src="./images/m6.jpg" alt="">
+    <h2>upcoming launches</h2>
+    <img class="mini" src="./images/m16.jpg" alt="">
+    <img class="mini" src="./images/m8.jpg" alt="">
+    <img class="mini" src="./images/m9.jpg" alt="">
+    <h2> Most Popular</h2>
+    <img class="mini" src="./images/m1.jpg" alt="">
+    <img class="mini" src="./images/m2.jpg" alt="">
+    <img class="mini" src="./images/m3.jpg" alt="">
+    <img class="mini" src="./images/m14.jpg" alt="">
+    <img class="mini" src="./images/m13.jpg" alt="">
+    </div>
+
+
+    <!-- card!----------------------- -->
+    <div class="m-photo"><h2>Top selling</h2></div>
+    <div class="gallery">
+        
+       
+        
+        <!-- card1 -->
+        <div class="content">
+            <img src="./images/phone31.jpg" alt="">
+            <h3>Blackberry 345T </h3>
+            <p>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB
+                16.33 cm (6.43 inch) Full HD+ AMOLED</p>
+            <h6>$120.00</h6>
+            <ul>
+   <li><i class="fa-solid fa-star checked"></i></li>
+   <li><i class="fa-solid fa-star checked"></i></li>
+   <li><i class="fa-solid fa-star checked"></i></li>
+   <li><i class="fa-solid fa-star checked"></i></li>
+   <li><i class="fa-solid fa-star checked"></i></li>
+               </ul>
+            <button class="buy-1">Buy Now</button>
+        </div>
+
+
+
+
+        
+<!-- card2 -->
+<div class="content">
+    <img src="./images/phone25.jpg" alt="">
+    <h3>realme C33 2023</h3>
+    <p>(Night Sea, 64 GB)  (4 GB RAM) 50MP + 0.3MP | 5MP Front Camera
+        5000 mAh Lithium Ion Battery</p>
+    <h6>$160.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star "></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-1">Buy Now</button>
+</div>
+
+
+
+
+<!-- card3 -->
+<div class="content">
+    <img src="./images/phone26.jpg" alt="">
+    <h3>REDMI 10</h3>
+    <p>4 GB RAM | 64 GB ROM | Expandable Upto 1 TB
+        17.02 cm (6.7 inch) HD+ Display
+        50MP + 2MP | 5MP </p>
+    <h6>$550.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+       </ul>
+    <button class="buy-1">Buy Now</button>
+</div>
+
+
+
+
+<!-- card4 -->
+<div class="content">
+    <img src="./images/phone33.jpg" alt="">
+    <h3>POCO C50 ,Blue</h3>
+    <p>2 GB RAM | 32 GB ROM | Expandable Upto 512 GB
+        16.56 cm (6.52 inch) HD+ Display</p>
+    <h6>$656.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star "></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-1">Buy Now</button>
+</div>
+
+
+
+
+<!-- card5 -->
+<div class="content">
+    <img src="./images/phone27.jpg" alt="">
+    <h3>vivo T2x 5G </h3>
+    <p>16.71 cm (6.58 inch) Full HD+ Display
+        50MP + 2MP | 8MP Front Camera</p>
+    <h6>$154.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star "></i></li>
+<li><i class="fa-solid fa-star "></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-2">Buy Now</button>
+</div>
+
+
+
+
+<!-- card6 -->
+<div class="content">
+    <img src="./images/phone28.jpg" alt="">
+    <h3>SAMSUNG F13</h3>
+    <p>16.76 cm (6.6 inch) Full HD+ Display
+        50MP + 5MP + 2MP | 8MP Front Camera</p>
+    <h6>$345.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-2">Buy Now</button>
+</div>
+
+
+
+
+<!-- card7 -->
+<div class="content">
+    <img src="./images/phone29.jpg" alt="">
+    <h3>Infinix HOT 30i </h3>
+    <p>8 GB RAM | 128 GB ROM | Expandable Upto 1 TB
+        16.76 cm (6.6 inch) HD+ Display</p>
+    <h6>$435.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-2">Buy Now</button>
+</div>
+
+
+
+
+<!-- card8 -->
+<div class="content">
+    <img src="./images/phone30.jpg" alt="">
+    <h3>MOTOROLA g52</h3>
+    <p>16.76 cm (6.6 inch) Full HD+ Display
+        50MP + 8MP + 2MP | 16MP Front Camera</p>
+    <h6>$646.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-2">Buy Now</button>
+</div>
+
+
+
+
+<!-- card9 -->
+<div class="content">
+    <img src="./images/phone9.jpg" alt="">
+    <h3>APPLE M4 Pro</h3>
+    <p>6 GB RAM | 128 GB ROM | Expandable Upto 1 TB
+        16.33 cm (6.43 inch) Full HD+ AMOLED</p>
+    <h6>$367.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-3">Buy Now</button>
+</div>
+
+
+
+
+<!-- card10 -->
+<div class="content">
+    <img src="./images/phone10.jpg" alt="">
+    <h3>APPLE T2 5G </h3>
+    <p>16.21 cm (6.38 inch) Full HD+ Display
+        64 MP (OIS) + 2MP | 16MP Front Camera</p>
+    <h6>$364.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-3">Buy Now</button>
+</div>
+
+
+
+
+<!-- card11 -->
+<div class="content">
+    <img src="./images/phone11.jpg" alt="">
+    <h3>Google Pixel 6a</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$674.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-3">Buy Now</button>
+</div>
+
+
+
+
+<!-- card12 -->
+<div class="content">
+    <img src="./images/phone12.jpg" alt="">
+    <h3>realme 10 Pro+ 5G</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$546.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-3">Buy Now</button>
+</div>
+
+
+
+
+<!-- card13 -->
+<div class="content">
+    <img src="./images/phone13.jpg" alt="">
+    <h3>OPPO A17k</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$364.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-4">Buy Now</button>
+</div>
+
+
+
+
+<!-- card14 -->
+<div class="content">
+    <img src="./images/phone14.jpg" alt="">
+    <h3>OPPO A17</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$345.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-4">Buy Now</button>
+</div>
+
+
+
+
+<!-- card15 -->
+<div class="content">
+    <img src="./images/phone15.jpg" alt="">
+    <h3>OPPO Reno8T 5G</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$765.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-4">Buy Now</button>
+</div>
+
+
+
+
+<!-- card16 -->
+<div class="content">
+    <img src="./images/phone16.jpg" alt="">
+    <h3>OPPO A76</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$565.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-4">Buy Now</button>
+</div>
+
+
+
+
+<!-- card17 -->
+<div class="content">
+    <img src="./images/phone17.jpg" alt="">
+    <h3>OPPO K10 5G </h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$345.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-5">Buy Now</button>
+</div>
+
+
+
+
+<!-- card18 -->
+<div class="content">
+    <img src="./images/phone18.jpg" alt="">
+    <h3>OPPO A57</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$452.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-5">Buy Now</button>
+</div>
+
+
+
+
+<!-- card19 -->
+<div class="content">
+    <img src="./images/phone19.jpg" alt="">
+    <h3>OPPO A12</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$766.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-5">Buy Now</button>
+</div>
+
+
+
+
+<!-- card20 -->
+<div class="content">
+    <img src="./images/phone20.jpg" alt="">
+    <h3>MOTOROLA G62 5G</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$440.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-5">Buy Now</button>
+</div>
+
+
+
+
+<!-- card21 -->
+<div class="content">
+    <img src="./images/phone21.jpg" alt="">
+    <h3>realme 10 Pro 5G</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$650.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-6">Buy Now</button>
+</div>
+
+
+
+
+
+
+<!-- card22 -->
+<div class="content">
+    <img src="./images/phone33.jpg" alt="">
+    <h3>SAMSUNG GURU</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$450.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-6">Buy Now</button>
+</div>
+
+
+
+
+
+<!-- card23 -->
+<div class="content">
+    <img src="./images/phone24.jpg" alt="">
+    <h3>Realme C30</h3>
+    <p>15.6 cm (6.14 inch) Full HD+ Display
+        12.2MP + 12MP | 8MP Front Camera
+        4410 mAh Battery</p>
+    <h6>$770.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-6">Buy Now</button>
+</div>
+
+
+
+
+
+<!-- card24 -->
+<div class="content">
+    <img src="./images/phone32.jpg" alt="">
+    <h3>REDMI 10A</h3>
+    <p>16.59 cm (6.53 inch) Display
+        13MP Rear Camera
+        5000 mAh Battery</p>
+    <h6>$230.00</h6>
+    <ul>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star checked"></i></li>
+<li><i class="fa-solid fa-star"></i></li>
+       </ul>
+    <button class="buy-6">Buy Now</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+<!-- footer -->
+    <footer><br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+                <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+              <p><div class="copyright-text"> Copyright &copy; 2023 All Rights Reserved by 
+                    <a href="#">Amazon</a>.</div>
+        </p>
+    </footer>
+</body>
+</html>
