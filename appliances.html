@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0%;
+    padding: 0%;
+    /* background-image: url("bg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;  */
+    /* height: 100%;
+    font-family: 'Arial Narrow', Arial, sans-serif; */
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+header{
+/* background-image: radial-gradient(rgb(208, 229, 176), rgba(49, 154, 17, 0.8), green); */
+background-color: #ebeded;
+margin: 0%;
+}
+
+.logo{
+     width: 110px;
+     margin: 20px;
+     height: auto;
+     float:left;
+   }
+    #elec{
+     text-align: center;
+    font-size:40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+   color: #000000;
+       padding-top: 20px;
+        /* left: 200px; */
+        /* padding-left: 500px; */
+            
+     }
+
+
+.h2{
+    color:black;
+    /* padding: 58px; */
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* products */
+body {
+  font-family: "Open Sans", sans-serif;
+  /* user-select: none; */
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: #636363;
+    height: 70px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+svg{
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+   
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {
+    vertical-align: middle;
+    /* width: 100%; */
+    /* height: 555px; */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container .mySlides img{
+    width: auto;
+    height: 400px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+.card {
+  position: relative;
+  width: 270px;
+  height: 430px;
+  background:rgb(255, 255, 255);
+  border-radius: 20px;
+  overflow:hidden;
+  margin-top: 50px;
+  /* margin-left: 10px; 
+   float: left; */
+}
+.card::after {
+  content: "Amazon";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-style: italic;
+  font-weight:bold;
+  font-size: 68px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: -110px;
+  z-index: 1;
+}
+
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #000000;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  color: rgb(238, 238, 238);
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 250px;
+  width: auto;
+}
+
+.para{
+    text-align: center;
+    height: 200px;
+    margin: 20px 0px 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <header>
+      <img class="logo" src="./images/amazon logo.png" alt="">
+        <h2 id="elec">Appliances</h2><br><br><hr>
+    </header>
+
+
+
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="./images/ap10.jpg" style="width:100%">
+  <div class="text">Amazon</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./images/ap11.jpg" style="width:100%">
+  <div class="text">Amazon</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./images/ap12.jpg" style="width:100%">
+  <div class="text">Amazon</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+<!-- ---------------1-------------------------------------------------- -->
+    <div class="col-3">
+<div class="card">
+    <div class="imgBox">
+      <img src="./images/app17.jpg" alt="mouse corsair" class="mouse">
+    </div>
+  
+    <div class="contentBox">
+      <h3>fire brigade M65</h3>
+      <h2 class="price">61.<small>98</small> $</h2>
+      <a href="#" class="buy">Buy Now</a>
+    </div>
+  
+  </div></div>
+
+<!-- ---------------1-------------------------------------------------- -->
+<div class="col-3">
+<div class="card">
+  <div class="imgBox">
+    <img src="./images/app2.jpg" alt="mouse corsair" class="mouse">
+  </div>
+
+  <div class="contentBox">
+    <h3>Nora suitcase C5</h3>
+    <h2 class="price">61.<small>98</small> $</h2>
+    <a href="#" class="buy">Buy Now</a>
+  </div>
+
+</div></div><!-- ---------------1-------------------------------------------------- -->
+<div class="col-3">
+<div class="card">
+<div class="imgBox">
+  <img src="./images/app18.jpg" alt="mouse corsair" class="mouse">
+</div>
+
+<div class="contentBox">
+  <h3>sofa original M5</h3>
+  <h2 class="price">61.<small>98</small> $</h2>
+  <a href="#" class="buy">Buy Now</a>
+</div>
+
+</div></div><!-- ---------------1-------------------------------------------------- -->
+<div class="col-3">
+<div class="card">
+<div class="imgBox">
+<img src="./images/app4.jpg" alt="mouse corsair" class="mouse">
+</div>
+
+<div class="contentBox">
+<h3>bedsheet XL</h3>
+<h2 class="price">61.<small>98</small> $</h2>
+<a href="#" class="buy">Buy Now</a>
+</div>
+
+</div></div><!-- ---------------1-------------------------------------------------- -->
+<div class="col-3">
+<div class="card">
+<div class="imgBox">
+<img src="./images/app8.jpg" alt="mouse corsair" class="mouse">
+</div>
+
+<div class="contentBox">
+<h3>ben ladder </h3>
+<h2 class="price">61.<small>98</small> $</h2>
+<a href="#" class="buy">Buy Now</a>
+</div>
+
+</div></div><!-- ---------------1-------------------------------------------------- -->
+<div class="col-3">
+<div class="card">
+<div class="imgBox">
+<img src="./images/app6.jpg" alt="mouse corsair" class="mouse">
+</div>
+
+<div class="contentBox">
+<h3>LED bulb</h3>
+<h2 class="price">61.<small>98</small> $</h2>
+<a href="#" class="buy">Buy Now</a>
+</div>
+
+</div></div><!-- ---------------1-------------------------------------------------- -->
+<div class="col-3">
+<div class="card">
+<div class="imgBox">
+<img src="./images/app7.jpg" alt="mouse corsair" class="mouse">
+</div>
+
+<div class="contentBox">
+<h3>wash basin </h3>
+<h2 class="price">61.<small>98</small> $</h2>
+<a href="#" class="buy">Buy Now</a>
+</div>
+
+</div></div><!-- ---------------1-------------------------------------------------- -->
+<div class="col-3">
+<div class="card">
+<div class="imgBox">
+<img src="./images/app8.jpg" alt="mouse corsair" class="mouse">
+</div>
+
+<div class="contentBox">
+<h3>ladder ultra</h3>
+<h2 class="price">61.<small>98</small> $</h2>
+<a href="#" class="buy">Buy Now</a>
+</div>
+
+</div></div><!-- ---------------1-------------------------------------------------- -->
+<div class="col-3">
+<div class="card">
+<div class="imgBox">
+<img src="./images/app9.jpg" alt="mouse corsair" class="mouse">
+</div>
+
+<div class="contentBox">
+<h3>M5 adaptor</h3>
+<h2 class="price">61.<small>98</small> $</h2>
+<a href="#" class="buy">Buy Now</a>
+</div>
+
+</div></div>
+
+
+
+
+
+
+
+
+  <!--  ==-------------2--------------------------------------------- -->
+
+  <div class="col-3">
+  <div class="card " >
+
+    <div class="imgBox">
+      <img  src="./images/app10.jpg" alt="" class="mouse">
+    </div>
+  
+    <div class="contentBox">
+      <h3> sofa Techlife T100</h3>
+      <h2 class="price">71.<small>98</small> $</h2>
+      <a href="#" class="buy">Buy Now</a>
+    </div>
+  
+  </div></div>
+<!-- -----------------------3------------------------------------------------------ -->
+<div class="col-3">      
+<div class="card" >
+
+    <div class="imgBox">
+      <img  src="./images/app11.jpg" alt="" class="mouse">
+    </div>
+  
+    <div class="contentBox">
+      <h3>Aroma wallpaper</h3>
+      <h2 class="price">90.<small>98</small> $</h2>
+      <a href="#" class="buy">Buy Now</a>
+    </div>
+  
+  </div>
+  </div>
+  <!-- -----------------4------------------------------------- -->
+  <div class="col-3">
+  <div class="card" >
+
+    <div class="imgBox">
+      <img  src="./images/app12.jpg" alt="" class="mouse">
+    </div>
+  
+    <div class="contentBox">
+      <h3>Musli Dhamaal</h3>
+      <h2 class="price">41.<small>98</small> $</h2>
+      <a href="#" class="buy">Buy Now</a>
+    </div>
+  
+  </div></div></div></div>
+
+  <!-- ----------------5----------------------------- -->
+  <div class="container">
+    <div class="row">
+  <div class="col-3">
+  <div class="card" >
+
+    <div class="imgBox">
+      <img  src="./images/app13.jpg" alt="" class="mouse">
+    </div>
+  
+    <div class="contentBox">
+      <h3>oarX 20 W PD brooms</h3>
+      <h2 class="price">71.<small>98</small> $</h2>
+      <a href="#" class="buy">Buy Now</a>
+    </div>
+  
+  </div></div>
+  <!-- ----------------6------------------------ -->
+  <div class="col-3">
+  <div class="card" >
+
+    <div class="imgBox">
+      <img src="./images/app14.jpg" alt="" class="mouse">
+    </div>
+  
+    <div class="contentBox">
+      <h3>Wiper WALL-MOUNT</h3>
+      <h2 class="price">1171.<small>98</small> $</h2>
+      <a href="#" class="buy">Buy Now</a>
+    </div>
+  
+  </div></div>
+  <!-- ------------------7----------------------------- -->
+  <div class="col-3">
+  <div class="card" >
+
+    <div class="imgBox">
+      <img  src="./images/app15.jpg" alt="" class="mouse">
+    </div>
+  
+    <div class="contentBox">
+      <h3>ELV Drill machine </h3>
+      <h2 class="price">51.<small>98</small> $</h2>
+      <a href="#" class="buy">Buy Now</a>
+    </div>
+  
+  </div></div>
+<!-- ---------------------8-------------------- -->
+<div class="col-3">
+<div class="card" >
+
+<div class="imgBox">
+  <img  src="./images/app16.jpg" alt="" class="mouse">
+</div>
+
+<div class="contentBox">
+  <h3>handwash with germs</h3>
+  <h2 class="price">51.<small>98</small> $</h2>
+  <a href="#" class="buy">Buy Now</a>
+</div>
+</div></div></div>
+
+<br>
+<!-- ---------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+<!-- footer start here -->
+<footer><br>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
+            <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg>
+          <p><div class="copyright-text"> Copyright &copy; 2023 All Rights Reserved by 
+                <a href="#">Amazon</a>.</div>
+    </p>
+</footer>
+</body>
+</html> 
